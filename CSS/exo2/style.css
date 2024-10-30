@@ -1,0 +1,19 @@
+div {
+    background-color: green;
+}
+
+.option1 {
+    background-color: #b10f2f;
+    color: blue;
+    font-style: italic;
+}
+
+.option2 {
+    background-color: rgb(183, 236, 25);
+    color: blueviolet
+}
+
+#parap {
+    color: black;
+
+}

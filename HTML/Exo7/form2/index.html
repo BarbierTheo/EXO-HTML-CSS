@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice formulaire</title>
+    <style>
+        h1,
+        h3 {
+            text-align: center;
+        }
+        textarea{
+width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
+    <h3>Merci de nous répondre</h3>
+    <form method="get" action="">
+        <p>
+            <input type="text" name="nom" />
+            Votre nom
+        </p>
+        <p>
+            <input type="text" name="prenom" />
+            Votre prénom
+        </p>
+        <p>
+            <input type="date" name="naissance">
+            Votre date de naissance
+        </p>
+        <p>
+            <input type="text" name="adresse" />
+            Votre adresse
+        </p>
+        <p>
+            <input type="text" name="ville" />
+            Votre ville
+        </p>
+        <p>
+            <input type="text" name="code_postal" />
+            Votre code postal
+        </p>
+        <p>
+            <input type="email" name="email" />
+            Votre e-mail
+        </p>
+
+        <p>
+            <input type="radio" name="genre" value="homme" />Vous êtes un homme
+            <input type="radio" name="genre" value="femme" />Vous êtes une femme
+        </p>
+
+        <p>
+            <select name="travail" id="travail">
+                <option value="développeur">Développeur</option>
+                <option value="analyste">Analyste</option>
+                <option value="chef_de_projet">Chef de projet</option>
+                <option value="autre">Autre</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="text" name="travail_autre" />
+            Si vous avez répondu autre, précisez
+        </p>
+
+        <!--  &lsaquo; = <   &rsaquo; = >   -->
+
+        <p>
+            <select name="salaire" id="salaire">
+                <option value="less_than_1000">&lsaquo; 1000€</option>
+                <option value="between_1000_1500">
+                    &rsaquo; 1000€ &lsaquo; et 1500€
+                </option>
+                <option value="between_1500_2000">
+                    &rsaquo; 1500€ &lsaquo; et 2000€
+                </option>
+                <option value="more_2000">&rsaquo; 2000€</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="month" name="date_stage" />
+            En quelle année avez-vous suivi le stage AFPA ?
+        </p>
+        <p>
+            <textarea name="commentaires" id="commentaires">Vos commentaires</textarea>
+        </p>
+
+        <h2>Merci d'avoir répondu au questionnaire</h2>
+        <p>
+            <input type="submit" value="Validez" />
+            <input type="submit" value="Annuler" />
+        </p>
+    </form>
+</body>
+
+</html>

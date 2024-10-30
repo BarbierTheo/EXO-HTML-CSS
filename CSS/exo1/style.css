@@ -1,0 +1,39 @@
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+}
+
+p+a {
+    text-decoration: none;
+    background-color: yellow;
+    color: red;
+}
+
+p+a:hover {
+    background-color: red;
+    color: yellow;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+nav {
+    background-color: green;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: white;
+}
